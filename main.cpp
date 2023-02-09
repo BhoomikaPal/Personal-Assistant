@@ -14,24 +14,24 @@ void greetings(){
     tm *time = localtime(&now);
 
     if (time-> tm_hour < 12){
-        cout<< "Good Morning Shivam"<<endl;
-        string phrase = "Good Morning Shivam";
+        cout<< "Good Morning Bhoomika"<<endl;
+        string phrase = "Good Morning Bhoomika";
         string command = "espeak \"" + phrase + "\"";
         const char *charCommand = command.c_str();
         system(charCommand);
     }
 
     else if (time-> tm_hour >= 12 && time->tm_hour <= 16){
-        cout<< "Good Afternoon Shivam"<<endl;
-        string phrase = "Good Afternoon Shivam";
+        cout<< "Good Afternoon Bhoomika"<<endl;
+        string phrase = "Good Afternoon Bhoomika";
         string command = "espeak \"" + phrase + "\"";
         const char *charCommand = command.c_str();
         system(charCommand);
     }
 
     else if (time-> tm_hour > 16 && time->tm_hour < 24){
-        cout<< "Good Evening Shivam"<<endl;
-        string phrase = "Good Evening Shivam";
+        cout<< "Good Evening Bhoomika"<<endl;
+        string phrase = "Good Evening Bhoomika";
         string command = "espeak \"" + phrase + "\"";
         const char *charCommand = command.c_str();
         system(charCommand);
@@ -88,8 +88,8 @@ int main()
 
                 if(command=="hello" || command=="hi")
                 {
-                    cout<<"Hello Shivam....."<<endl;
-                    string phrase = "Hello Shivam";
+                    cout<<"Hello Bhoomika....."<<endl;
+                    string phrase = "Hello Bhoomika";
                     string command = "espeak \"" + phrase + "\"";
                     const char *charCommand = command.c_str();
                     system(charCommand);
@@ -104,8 +104,8 @@ int main()
 
                 else if(command=="who are you" || command=="who is speaking")
                 {
-                    cout<<"I'm a program created by Shivam !!!"<<endl;
-                    string phrase = "I'm a program created by Shivam !!!";
+                    cout<<"I'm a program created by Bhoomika !!!"<<endl;
+                    string phrase = "I'm a program created by Bhoomika !!!";
                     string command = "espeak \"" + phrase + "\"";
                     const char *charCommand = command.c_str();
                     system(charCommand);
@@ -227,8 +227,8 @@ int main()
 
                 else if(command=="bye" || command=="exit")
                 {
-                    cout<<"Good Bye Shivam, Have a good day!"<<endl;
-                    string phrase = "Good Bye Shivam, have a good day!";
+                    cout<<"Good Bye Bhoomika, Have a good day!"<<endl;
+                    string phrase = "Good Bye Bhoomika, have a good day!";
                     string command = "espeak \"" + phrase + "\"";
                     const char *charCommand = command.c_str();
                     system(charCommand);
